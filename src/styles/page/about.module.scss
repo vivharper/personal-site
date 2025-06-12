@@ -1,0 +1,50 @@
+@import "../tokens/color.module";
+@import "../tokens/typography.module";
+@import "../tokens/breakpoints.module";
+@import "../tokens/space.module.scss";
+@import "../tokens/border.module.scss";
+
+.about {
+  margin: 0 1rem;
+  display: flex;
+  flex-wrap: nowrap;
+  line-height: 2rem;
+  gap: 2rem;
+
+  @media only screen and (max-width: $vh-breakpoint-laptop) {
+    flex-wrap: wrap;
+  }
+
+  .avatar {
+    display: block;
+    margin-bottom: 1rem;
+    height: 250px;
+    width: 250px;
+    border-radius: $vh-border-radius-full;
+
+    @media only screen and (max-width: $vh-breakpoint-laptop) {
+      margin: 0 auto;
+    }
+  }
+
+  .description {
+    display: inline-block;
+    margin-top: $vh-space-6;
+
+    h1 {
+      @include heading-1();
+
+      margin-bottom: $vh-space-4;
+      display: block;
+
+      @media only screen and (max-width: $vh-breakpoint-laptop) {
+        text-align: center;
+      }
+    }
+
+    p {
+      @include paragraph();
+      margin: 0 $vh-space-4;
+    }
+  }
+}

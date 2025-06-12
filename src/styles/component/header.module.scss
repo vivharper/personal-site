@@ -1,0 +1,56 @@
+@import "../tokens/color.module";
+@import "../tokens/space.module";
+@import "../tokens/typography.module";
+
+.root {
+  background-color: $vh-color-light-bg-secondary;
+  color: $vh-color-light-text-primary;
+  display: flex;
+  justify-content: center;
+
+  .content {
+    padding: $vh-space-4;
+    display: flex;
+    box-shadow: none;
+    flex-direction: row;
+    width: 65vw;
+
+    .home {
+      .name {
+        font-weight: $vh-typography-font-weight-bold;
+      }
+
+      .name,
+      .title {
+        color: $vh-color-light-text-primary;
+        cursor: pointer;
+      }
+    }
+
+    .links {
+      margin-left: auto;
+      align-items: center;
+
+      .email {
+        display: inline-block;
+        margin: auto;
+        text-align: center;
+        vertical-align: middle;
+        height: 100%;
+
+        font-size: $vh-typography-font-size-sm;
+      }
+
+      .linkedin,
+      .github {
+        height: auto;
+        width: auto;
+
+        svg {
+          height: $vh-typography-font-size-xl;
+          width: $vh-typography-font-size-xl;
+        }
+      }
+    }
+  }
+}
