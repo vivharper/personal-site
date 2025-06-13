@@ -1,11 +1,13 @@
 import styles from "../styles/page/home.module.scss";
 import About from "../sections/about";
+import Work from "../sections/work";
 
 const Home = (props: any) => {
   return (
     <div className={styles.root}>
       <div className={styles.content}>
         <About />
+        <Work />
 
         {/* <div>
           <h2>Timeline</h2>

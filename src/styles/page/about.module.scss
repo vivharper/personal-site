@@ -47,4 +47,21 @@
       margin: 0 $vh-space-4;
     }
   }
+
+  .skills {
+    display: flex;
+
+    @media only screen and (max-width: $vh-breakpoint-laptop) {
+      flex-wrap: wrap;
+    }
+
+    div {
+      margin: 0 $vh-space-4 $vh-space-4 $vh-space-4;
+      flex: 1;
+    }
+
+    ul {
+      margin-left: $vh-space-6;
+    }
+  }
 }

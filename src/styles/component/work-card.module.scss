@@ -1,0 +1,90 @@
+@import "../tokens/color.module";
+@import "../tokens/typography.module";
+@import "../tokens/breakpoints.module";
+@import "../tokens/space.module.scss";
+@import "../tokens/border.module.scss";
+
+.root {
+  margin: $vh-space-6;
+  border-radius: $vh-border-radius-lg;
+  background: $vh-color-dark-bg-secondary;
+  border: $vh-border-weight-base solid transparent;
+  padding: $vh-space-6;
+  width: 100%;
+  display: flex;
+
+  @media only screen and (max-width: $vh-breakpoint-laptop) {
+    flex-wrap: wrap;
+  }
+
+  .image-container {
+    position: relative;
+    overflow: hidden;
+    margin-right: $vh-space-4;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100%;
+    width: 100%;
+    max-width: 240px;
+
+    @media only screen and (max-width: $vh-breakpoint-laptop) {
+      max-height: 9999px;
+      max-width: 9999px;
+      margin-bottom: $vh-space-6;
+      margin-right: 0;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center center;
+      border-radius: $vh-border-radius-md;
+    }
+  }
+
+  .content-container {
+    display: flex;
+    flex-direction: column;
+
+    .title {
+      display: flex;
+
+      span:first-of-type {
+        @include heading-3();
+
+        flex-grow: 1;
+      }
+
+      span:last-of-type {
+        @include paragraph();
+
+        align-self: flex-end;
+        font-size: $vh-typography-font-size-sm;
+      }
+    }
+
+    .description {
+      @include paragraph();
+
+      margin: $vh-space-2;
+      flex-grow: 1;
+    }
+
+    a {
+      color: $vh-color-dark-text-interactive;
+    }
+
+    svg {
+      height: $vh-typography-font-size-md;
+      width: $vh-typography-font-size-md;
+      fill: $vh-color-dark-text-interactive;
+      vertical-align: middle;
+      margin-bottom: 2px;
+    }
+  }
+}
