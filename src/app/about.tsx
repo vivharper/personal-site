@@ -1,12 +1,13 @@
 import Image from "next/image";
 import styles from "../styles/page/about.module.scss";
+import { prefix } from "../../utils/prefix";
 
 const About = () => {
   return (
     <div className={styles.about}>
       <Image
         className={styles.avatar}
-        src="Image_015.jpg"
+        src={`${prefix}/Image_015.jpg`}
         alt="Brown haired woman with brown eyes, red lipstick, and silver eyeshadow wearing a black blazer with a beige shirt"
       ></Image>
       <div className={styles.description}>
