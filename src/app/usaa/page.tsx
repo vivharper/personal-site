@@ -1,6 +1,7 @@
+import Link from "next/link";
 import styles from "../../styles/page/usaa.module.scss";
 
-const Page = (props: any) => {
+const Page = () => {
   return (
     <div>
       <h1>USAA</h1>
@@ -40,11 +41,11 @@ const Page = (props: any) => {
         In addition to coding for the libraries, I co-hosted support hours for
         the library twice a week where design, development, and accessibility
         concerns were fielded and addressed. Once quarterly I would partner with
-        USAA's onboarding team to educate newly hired employees on the benefits
-        of a design system and the importance of digital accessibility through
-        presentation and a prepared workshop. Towards the end of my time with
-        the team I had contribution rate second only to our team technical lead
-        for bug fixes, component enhancements, contributed components, and
+        USAA{`&apos;`}s onboarding team to educate newly hired employees on the
+        benefits of a design system and the importance of digital accessibility
+        through presentation and a prepared workshop. Towards the end of my time
+        with the team I had contribution rate second only to our team technical
+        lead for bug fixes, component enhancements, contributed components, and
         documentation maintenance.
       </p>
       <br />
@@ -56,7 +57,7 @@ const Page = (props: any) => {
         American Airlines.
       </p>
       <br />
-      <a href="/aa" className={styles["next-link"]}>
+      <Link href="/aa" className={styles["next-link"]}>
         On to American Airlines{" "}
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -67,7 +68,7 @@ const Page = (props: any) => {
         >
           <path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z" />
         </svg>
-      </a>
+      </Link>
     </div>
   );
 };

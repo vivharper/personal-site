@@ -1,19 +1,20 @@
+import Image from "next/image";
 import styles from "../styles/page/about.module.scss";
 
-const About = (props: any) => {
+const About = () => {
   return (
     <div className={styles.about}>
-      <img
+      <Image
         className={styles.avatar}
         src="Image_015.jpg"
         alt="Brown haired woman with brown eyes, red lipstick, and silver eyeshadow wearing a black blazer with a beige shirt"
-      ></img>
+      ></Image>
       <div className={styles.description}>
         <h1>Vivian Dickerson</h1>
         <p>
-          Hi there, my name is Vivian {"\[she/her\]"}, and I'm a UX software
-          engineer based in Scarborough, Maine. I currently lead the design
-          system effort for American Airlines and have a passion for user
+          Hi there, my name is Vivian {"\[she/her\]"}, and I{`&apos;`}m a UX
+          software engineer based in Scarborough, Maine. I currently lead the
+          design system effort for American Airlines and have a passion for user
           experience and digital accessibility. I completed my Bachelors of
           Science in Computer Engineering at Texas A&M University and since then
           have dedicated my life to elevating the digital space and helping make

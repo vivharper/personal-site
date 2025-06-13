@@ -1,6 +1,7 @@
+import Link from "next/link";
 import styles from "../../styles/page/aa.module.scss";
 
-const Page = (props: any) => {
+const Page = () => {
   return (
     <div>
       <h1>American Airlines</h1>
@@ -78,7 +79,7 @@ const Page = (props: any) => {
         space at American Airlines.
       </p>
       <br />
-      <a href="/" className={styles["next-link"]}>
+      <Link href="/" className={styles["next-link"]}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           height="24px"
@@ -89,7 +90,7 @@ const Page = (props: any) => {
           <path d="M560-240 320-480l240-240 56 56-184 184 184 184-56 56Z" />
         </svg>{" "}
         Home
-      </a>
+      </Link>
     </div>
   );
 };

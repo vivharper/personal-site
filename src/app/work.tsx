@@ -1,7 +1,7 @@
 import styles from "../styles/page/work.module.scss";
 import WorkCard from "@/components/WorkCard";
 
-const Work = (props: any) => {
+const Work = () => {
   const workCards = [
     {
       title: "USAA",

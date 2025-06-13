@@ -1,6 +1,6 @@
 import styles from "../styles/component/footer.module.scss";
 
-const Footer = (props: any) => {
+const Footer = () => {
   return (
     <footer className={styles.root}>
       <div className={styles.content}>

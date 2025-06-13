@@ -1,12 +1,14 @@
+import Link from "next/link";
+import Image from "next/image";
 import styles from "../styles/component/work-card.module.scss";
 
-const WorkCard = (props: any) => {
+const WorkCard = (props) => {
   const { title, dates, imgSrc, imgAlt, description, route } = props;
 
   return (
     <div className={styles.root}>
       <div className={styles["image-container"]}>
-        <img src={imgSrc} alt={imgAlt}></img>
+        <Image src={imgSrc} alt={imgAlt}></Image>
       </div>
       <div className={styles["content-container"]}>
         <div className={styles.title}>
@@ -16,7 +18,7 @@ const WorkCard = (props: any) => {
           </span>
         </div>
         <div className={styles.description}>{description}</div>
-        <a href={route}>
+        <Link href={route}>
           Read more{" "}
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -27,7 +29,7 @@ const WorkCard = (props: any) => {
           >
             <path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z" />
           </svg>
-        </a>
+        </Link>
         {props.children}
       </div>
     </div>
