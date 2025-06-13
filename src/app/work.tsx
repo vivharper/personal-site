@@ -10,6 +10,7 @@ const Work = (props: any) => {
         "Rolling out USAA's proprietary design system: Reveille. Designing, developing, documenting, and teaching designers and developers the benefits of design systems.",
       imgSrc: "usaa-building.jpeg",
       imgAlt: "Entrance to USAA headquarters in San Antonio, TX",
+      route: "/usaa",
     },
     {
       title: "American Airlines",
@@ -18,6 +19,7 @@ const Work = (props: any) => {
         "Elevating American Airlines' design system Aileron to new heights. Focusing on flexibility and accessibility, introducing foundational design tokens for commercial and enterprise applications, and initiating tech modernization efforts.",
       imgSrc: "aa-plane.jpg",
       imgAlt: "Image of American Airlines plane mid-flight",
+      route: "/aa",
     },
   ];
   return (

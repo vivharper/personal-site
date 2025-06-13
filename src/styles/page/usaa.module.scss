@@ -1,0 +1,21 @@
+@import "../tokens/space.module.scss";
+@import "../tokens/color.module.scss";
+@import "../tokens/typography.module";
+
+.list {
+  margin-left: $vh-space-6;
+  margin-top: $vh-space-2;
+  margin-bottom: $vh-space-6;
+}
+
+.next-link {
+  color: $vh-color-dark-text-interactive;
+
+  svg {
+    height: $vh-typography-font-size-md;
+    width: $vh-typography-font-size-md;
+    fill: $vh-color-dark-text-interactive;
+    vertical-align: middle;
+    margin-bottom: 2px;
+  }
+}

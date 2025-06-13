@@ -1,5 +1,6 @@
 @import "./tokens/color.module.scss";
 @import "./tokens/typography.module.scss";
+@import "./tokens/space.module.scss";
 
 html,
 body {
@@ -7,7 +8,7 @@ body {
 }
 
 body {
-  @include paragraph;
+  @include paragraph();
 
   color: $vh-color-dark-text-primary;
   background: $vh-color-dark-bg-primary;
@@ -30,4 +31,47 @@ a {
   html {
     color-scheme: dark;
   }
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+.content-wrapper {
+  margin: 48px auto 48px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  box-shadow: none;
+  flex-direction: column;
+  width: 65vw;
+}
+
+h1 {
+  @include heading-1();
+
+  margin-bottom: $vh-space-6;
+}
+
+h2 {
+  @include heading-2();
+
+  margin-bottom: $vh-space-4;
+}
+
+h3 {
+  @include heading-3();
+
+  margin-bottom: $vh-space-2;
+}
+
+h4 {
+  @include heading-4();
+
+  margin-bottom: $vh-space-1;
+}
+
+br {
+  margin-block: $vh-space-1;
 }

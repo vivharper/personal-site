@@ -1,6 +1,7 @@
 @import "../tokens/color.module";
 @import "../tokens/space.module";
 @import "../tokens/typography.module";
+@import "../tokens/breakpoints.module";
 
 .root {
   background-color: $vh-color-light-bg-secondary;
@@ -15,7 +16,19 @@
     flex-direction: row;
     width: 65vw;
 
+    @media only screen and (max-width: $vh-breakpoint-laptop) {
+      width: 90vw;
+    }
+
     .home {
+      .home-link {
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
       .name {
         font-weight: $vh-typography-font-weight-bold;
       }

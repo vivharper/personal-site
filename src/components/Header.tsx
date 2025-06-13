@@ -5,7 +5,7 @@ const Header = (props: any) => {
     <header className={styles.root}>
       <div className={styles.content}>
         <div className={styles.home}>
-          <a>
+          <a href="/" className={styles["home-link"]}>
             <div className={styles.name}>Vivian Dickerson</div>
             <div className={styles.title}>Senior UX Engineer</div>
           </a>
