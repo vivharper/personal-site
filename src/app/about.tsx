@@ -1,19 +1,21 @@
 import Image from "next/image";
 import styles from "../styles/page/about.module.scss";
-import { prefix } from "../../utils/prefix";
 
 const About = () => {
   return (
     <div className={styles.about}>
       <Image
+        unoptimized
         className={styles.avatar}
-        src={`${prefix}/Image_015.jpg`}
+        src="/personal-site/Image-015.jpg"
         alt="Brown haired woman with brown eyes, red lipstick, and silver eyeshadow wearing a black blazer with a beige shirt"
+        width="250"
+        height="250"
       ></Image>
       <div className={styles.description}>
         <h1>Vivian Dickerson</h1>
         <p>
-          Hi there, my name is Vivian {"\[she/her\]"}, and I{`&apos;`}m a UX
+          Hi there, my name is Vivian {"\[she/her\]"}, and I&apos;m a UX
           software engineer based in Scarborough, Maine. I currently lead the
           design system effort for American Airlines and have a passion for user
           experience and digital accessibility. I completed my Bachelors of

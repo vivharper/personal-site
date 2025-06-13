@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styles from "../styles/component/footer.module.scss";
 
 const Footer = () => {
@@ -6,31 +7,34 @@ const Footer = () => {
       <div className={styles.content}>
         <ul>
           <li>
-            <a
-              href="/Vivian_Dickerson_latest.pdf"
+            <Link
+              passHref
+              href="https://vivharper.github.io/personal-site/Vivian-Dickerson-latest.pdf"
               target="_blank"
               rel="noopener noreferrer"
             >
               Resume
-            </a>
+            </Link>
           </li>
           <li>
-            <a
+            <Link
+              passHref
               href="https://github.com/vivharper"
               target="_blank"
               rel="noopener noreferrer"
             >
               Github
-            </a>
+            </Link>
           </li>
           <li>
-            <a
+            <Link
+              passHref
               href="https://www.linkedin.com/in/vivian-dickerson/"
               target="_blank"
               rel="noopener noreferrer"
             >
               LinkedIn
-            </a>
+            </Link>
           </li>
         </ul>
       </div>

@@ -4,7 +4,7 @@ import styles from "../styles/component/header.module.scss";
 const Header = () => {
   return (
     <header className={styles.root}>
-      <div className={styles.content}>
+      <div className={styles["text-content"]}>
         <div className={styles.home}>
           <Link href="/" className={styles["home-link"]}>
             <div className={styles.name}>Vivian Dickerson</div>

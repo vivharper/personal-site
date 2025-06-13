@@ -1,7 +1,6 @@
 import Link from "next/link";
-import Image from "next/image";
 import styles from "../styles/component/work-card.module.scss";
-import { prefix } from "../../utils/prefix";
+import Image from "next/image";
 
 const WorkCard = (props) => {
   const { title, dates, imgSrc, imgAlt, description, route } = props;
@@ -9,7 +8,13 @@ const WorkCard = (props) => {
   return (
     <div className={styles.root}>
       <div className={styles["image-container"]}>
-        <Image src={`${prefix}/${imgSrc}`} alt={imgAlt}></Image>
+        <Image
+          unoptimized
+          src={imgSrc}
+          alt={imgAlt}
+          width="426"
+          height="240"
+        ></Image>
       </div>
       <div className={styles["content-container"]}>
         <div className={styles.title}>

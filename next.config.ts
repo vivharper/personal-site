@@ -1,9 +1,11 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  basePath: "/personal-site",
   output: "export",
-  sassOptions: {},
+  basePath: "/personal-site",
+  images: {
+    unoptimized: true,
+  },
 };
 
 export default nextConfig;
