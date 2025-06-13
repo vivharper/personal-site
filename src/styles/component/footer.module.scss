@@ -1,0 +1,38 @@
+@import "../tokens/color.module";
+@import "../tokens/space.module";
+@import "../tokens/typography.module";
+@import "../tokens/breakpoints.module";
+
+.root {
+  background-color: $vh-color-dark-bg-secondary;
+  color: $vh-color-dark-text-primary;
+  display: flex;
+  justify-content: center;
+
+  .content {
+    padding: $vh-space-4;
+    box-shadow: none;
+    flex-direction: row;
+    width: 65vw;
+
+    @media only screen and (min-width: $vh-breakpoint-laptop) {
+      width: 35vw;
+    }
+
+    a {
+      color: $vh-color-dark-text-interactive;
+    }
+
+    ul {
+      display: flex;
+      list-style-type: none;
+      justify-content: space-between;
+      text-align: center;
+
+      li {
+        display: inline-block;
+        flex: 1;
+      }
+    }
+  }
+}

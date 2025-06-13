@@ -20,7 +20,12 @@
       width: 90vw;
     }
 
+    @media only screen and (max-width: $vh-breakpoint-mobile) {
+      flex-wrap: wrap;
+    }
+
     .home {
+      margin-right: $vh-space-4;
       .home-link {
         text-decoration: none;
 
@@ -43,6 +48,10 @@
     .links {
       margin-left: auto;
       align-items: center;
+
+      @media only screen and (max-width: $vh-breakpoint-mobile) {
+        margin-left: 0;
+      }
 
       .email {
         display: inline-block;
